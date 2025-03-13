@@ -1,0 +1,41 @@
+###* Crear un producto
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "name":"Hp victus",
+  "price":"3000"
+}
+
+###* Todos los productos
+GET http://localhost:3000/api/products?page=1&limit=40
+Content-Type: application/json
+
+{
+
+}
+
+###* Un producto por id
+GET http://localhost:3000/api/products/8
+Content-Type: application/json
+
+{
+
+}
+
+###* Eliminar un producto por id
+DELETE  http://localhost:3000/api/products/51
+Content-Type: application/json
+
+{
+
+}
+
+###* actualizar  un producto por el  id
+PATCH  http://localhost:3000/api/products/50
+Content-Type: application/json
+
+{
+    "id":"51",
+    "name":"Almohadilla para mouse roja"
+}

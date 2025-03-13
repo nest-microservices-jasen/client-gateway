@@ -1,0 +1,62 @@
+POST http://localhost:3000/api/orders
+Content-Type: application/json
+
+{
+ "items":[
+ {
+    "productId":8,
+    "price":150,
+    "quantity":2
+ },
+  {
+    "productId":7,
+    "price":150,
+    "quantity":2
+ }
+ ]
+}
+
+
+###* BUSQUEDA DE ORDENES 
+GET  http://localhost:3000/api/orders
+Content-Type: application/json
+
+{
+    
+}
+
+###* PAGINACION CON QUERY PARAMS
+GET  http://localhost:3000/api/orders?status=PENDING
+Content-Type: application/json
+
+{
+    
+}
+
+
+###* PAGINACION ALTERNATIVA CON PARAMS STATUS
+GET  http://localhost:3000/api/orders/DELIVERED
+Content-Type: application/json
+
+{
+    
+}
+
+
+
+###* BUSQUEDA POR ID
+GET http://localhost:3000/api/orders/id/1459ca11-382b-4449-b169-a358906ed242
+Content-Type: application/json
+
+{
+    
+}
+
+
+###* CHANGE ORDER STATUS
+PATCH  http://localhost:3000/api/orders/0100c761-5d19-4744-80d8-e6aad0c3d654
+Content-Type: application/json
+
+{
+    "status":"DELIVERED"
+}
